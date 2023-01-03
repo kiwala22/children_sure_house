@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Children Sure House | <%= yield(:title) %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/favicon.png">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload", :media => "all" %>
+    <%= javascript_importmap_tags %>
+  </head>
+  <body>
+    <%= render "layouts/partials/header" %>
+    <%= yield %>
+    <%= render "layouts/partials/footer" %>
+    <%= render "layouts/partials/scroll_up" %>
+    <!-- compile all js -->
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>
