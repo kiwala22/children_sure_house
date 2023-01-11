@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ('/')
   root 'home#index'
+  get "news_feed/:id", to: "home#news_feed"
+  get "projects", to: "home#projects"
 end
