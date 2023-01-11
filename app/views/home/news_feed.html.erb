@@ -1,0 +1,18 @@
+<%= provide(:title, 'News feed') %>
+<section class="blog_area single-post-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 posts-list">
+                <div class="single-post">
+                    <div class="feature-img">
+                        <%= image_tag url_for(@feed.image), class: "img-fluid" %>
+                    </div>
+                    <div class="blog_details">
+                        <h2 style="color: #2d2d2d;"><%= @feed.title %></h2>
+                        <p class="excert"><%= @feed.content %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

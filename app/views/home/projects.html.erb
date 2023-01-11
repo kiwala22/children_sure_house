@@ -1,0 +1,31 @@
+<div class="services-area1 section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 col-sm-11">
+        <div class="section-tittle text-center mb-60">
+          <h2>Projects</h2>
+        </div>
+      </div>
+    </div>
+    <div class="services1-active">
+      <% @projects.each do |project| %>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <!-- Single -->
+          <div class="properties pb-30">
+            <div class="properties-card">
+              <div class="properties-img">
+                <a href="#/<%= project.id %>"><%= image_tag url_for(project.image) %></a>
+              </div>
+              <div class="wrap-wrapper">
+                <div class="properties-caption">
+                  <h3><a href="#/<%= project.id %>"><%= project.title %></a></h3>
+                  <p><%= project.description %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
