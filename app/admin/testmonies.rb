@@ -1,4 +1,4 @@
-ActiveAdmin.register NewsFeed do
+ActiveAdmin.register Testmony do
   permit_params :title, :content, :image
 
   form do |f|
@@ -19,5 +19,5 @@ ActiveAdmin.register NewsFeed do
         image_tag url_for(ad.image)
       end
     end
-  end
+  end  
 end
