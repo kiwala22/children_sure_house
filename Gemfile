@@ -76,6 +76,9 @@ end
 
 gem 'activeadmin'
 
+# S3 integration
+gem 'aws-sdk-s3', require: false
+
 # Plus integrations with:
 gem 'cancancan'
 gem 'devise'
