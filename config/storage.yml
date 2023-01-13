@@ -6,6 +6,14 @@ local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
 
+
+# Digital Space
+digitalocean:
+  service: S3
+  endpoint: <%= ENV.fetch("SPACE_URL", nil) %>
+  access_key_id: <%= ENV.fetch("SPACE_ACCESS_KEY_ID", nil) %>
+  secret_access_key: <%= ENV.fetch("SPACE_ACCESS_KEY", nil) %>
+
 # Use bin/rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
 #   service: S3
