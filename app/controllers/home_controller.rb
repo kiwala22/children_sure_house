@@ -7,6 +7,9 @@ class HomeController < ApplicationController
   def set_data
     projects
     @newsfeeds = NewsFeed.all.by_date
+    @about = Section.find_by(name: "ABOUT")
+    @join_us = Section.find_by(name: "JOIN_US")
+    @emargency_care = Section.find_by(name: "EMARGENCY_CARE")
   end
 
   def news_feed
@@ -15,5 +18,17 @@ class HomeController < ApplicationController
 
   def projects
     @projects = Project.all.by_date
+  end
+
+  def partners
+    @partners = Partner.all.by_date
+  end
+
+  def donate
+    @donate = Section.find_by(name: "DONATE")
+  end
+
+  def testmonies
+    @testmonies = Testmony.all.by_date
   end
 end

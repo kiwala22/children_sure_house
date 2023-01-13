@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   root 'home#index'
   get "news_feed/:id", to: "home#news_feed"
   get "projects", to: "home#projects"
+  get "partners", to: "home#partners"
+  get "donate", to: "home#donate"
+  get "testmonies", to: "home#testmonies"
 end

@@ -1,0 +1,15 @@
+<div class="emargency-care section-img-bg2" style="background-image: url(<%= url_for(@emargency_care.images[0]) %>);">
+    <div class="container">
+        <div class="row justify-content-end">
+        <div class="col-xl-6 col-lg-8 col-md-9 col-sm-12">
+            <div class="single-emargency">
+            <div class="emargency-cap">
+                <h5><a href="#"><%= @emargency_care.title %></a></h5>
+                <p><%= @emargency_care.content %></p>
+                <a href="<%= @emargency_care.link %>" class="btn loan-btn"><%= @emargency_care.link_text %></a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
