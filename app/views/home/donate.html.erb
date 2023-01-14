@@ -1,8 +1,8 @@
 <section class="sample-text-area">
-    <div class="container box_1170">
-        <h2 class="text-heading"><%= @donate.title %></h2>
-        <p class="sample-text"><%= @donate.content %></p>
-    </div>
+  <div class="container box_1170">
+    <h2 class="text-heading"><%= @donate.title rescue nil %></h2>
+    <p class="sample-text"><%= @donate.content rescue nil %></p>
+  </div>
 </section>
 <br />
 <br />
