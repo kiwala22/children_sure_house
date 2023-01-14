@@ -14,7 +14,7 @@
           <div class="properties pb-30">
             <div class="properties-card">
               <div class="properties-img">
-                <a href="/news_feed/<%= article.id %>"><%= image_tag url_for(article.image) %></a>
+                <a href="/news_feed/<%= article.id %>"><%= image_tag url_for(article.image) rescue nil %></a>
               </div>
               <div class="wrap-wrapper">
                 <div class="properties-caption">
